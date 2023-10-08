@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header {
+    height: 100vh;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+/* Rectangle 4 */
+.navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 10vh;
+    background: #360049;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+.navItem ul li {
+    display: inline-block;
+    padding-left: 3rem;
+}
+
+.navItem ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    height: 100%;
+}
+
+.hamBurger {
+    display: none;
+}
+
+/* hero section */
+.Hero {
+    padding-top: 10vh;
+    height: 90vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.Hero p {
+    font-family: 'Roboto', sans-serif;
+    color: #8A8A8A;
+    font-size: 3vh;
+    line-height: 35px;
+}
+
+.Hero h1 {
+    /* Stephenraj */
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #CEA100;
+}
+
+.Hero h2 {
+    /* UX/UI & Web Designer */
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62.8269px;
+    color: #360049;
+}
+
+.buttons a {
+    color: #8A8A8A;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #8a8a8a5d;
+    margin-right: 20px;
+    font-size: 2.5vh;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+/* works */
+
+.works {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    width: 100%;
+    left: 0px;
+    top: 830px;
+    background: linear-gradient(280.37deg, #0E0013 -0.71%, #320043 98.62%);
+
+}
+
+.project {
+    width: 39vw;
+    height: 20vw;
+    box-shadow: 0px 0px 3px 2px #0000008a;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prjImg {
+    width: 20vw;
+    height: 20vw;
+}
+
+.works h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%20
+}
+
+.content h3 {
+    padding-top: 1vw;
+    font-size: 22px;
+}
+
+.content p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content button {
+    padding: 10px;
+    width: 100%;
+    justify-self: flex-end;
+    align-self: center;
+    font-family: 'Kaisei HarunoUmi';
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    background-color: rgb(0, 0, 0);
+    border: 1px solid;
+}
+
+
+
+@media (max-width:900px) {
+    .navItem {
+        display: none;
+    }
+
+    .navBar {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 12vh;
+    }
+
+    .hamBurger {
+        display: block;
+    }
+
+    .Hero {
+        height: 88vh;
+        gap: 1.5vh;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .Hero p {
+        font-size: 2.7vh;
+        margin-top: 25px;
+        line-height: 40px;
+    }
+
+    .Hero h1 {
+        font-size: 6vh;
+    }
+
+    .Hero h2 {
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    .buttons a {
+        padding: 15px 25px;
+        margin-right: 5px;
+    }
+
+    .works {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .project {
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .prjImg {
+        width: 50%;
+        height:30vh;
+    }
+    .works h2{
+        padding-top: 5%;
+        padding-bottom: 2%;
+        color: white;
+    }
+    .content{
+        padding: 8px;
+    }
+    .content h3{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+}
