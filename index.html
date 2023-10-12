@@ -11,6 +11,20 @@
 </head>
 
 <body>
+    <div class="menu">
+        <div class="menuItem">
+            <button class="material-symbols-outlined"
+                style="font-size: 70px;color: white;font-weight: 100;background-color: transparent;    border: 0;" onclick="menuOpen()">
+                close
+            </button>
+            
+                <li> <a href="#"> Work</a></li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Contact</a></li>
+            
+        </div>
+
+    </div>
     <div class="Header">
         <div class="navBar">
             <img src="images/logo.png" alt="My Signature" class="logo">
@@ -21,10 +35,11 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="hamBurger">
-                <span class="material-symbols-outlined" style="font-size: 70px;color: white;font-weight: 100;">
+            <div class="hamBurger" onclick="menuOpen()">
+                <button class="material-symbols-outlined"
+                    style="font-size: 70px;color: white;font-weight: 100;background-color: transparent;    border: 0;">
                     drag_handle
-                </span>
+                </button>
             </div>
         </div>
 
@@ -42,7 +57,7 @@
     </div>
 
     <div class="works">
-        <h2>UX/UI</h2>
+        <h2>Work</h2>
         <div class="row">
             <div class="project">
                 <img src="images/img1.jfif" alt="" class="prjImg">
@@ -68,8 +83,26 @@
                 </div>
             </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="project">
+                <img src="images/img1.jfif" alt="" class="prjImg">
+                <div class="content">
+                    <h3>Scion Billing System</h3>
+                    <p>A mobile centric
+                        billing ap
+                        small b ap
+                        small business</p>
+                    <button>View Case Study</button>
+                </div>
+            </div>
+
+           
+        </div>
     </div>
 
 </body>
+
+<script src="index.js"></script>
 
 </html>

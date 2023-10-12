@@ -21,7 +21,7 @@
     padding-right: 10%;
     height: 10vh;
     background: #360049;
-    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -162,9 +162,39 @@
     /* font-weight: bold; */
     background-color: rgb(0, 0, 0);
     border: 1px solid;
+    
+}
+
+/* menu */
+.menu {
+    width: 0;
+    height: 0;
+}
+.menuOpen{
+    display: block;
+    transform: scaleX(1);
+    transform:translate(0 , 0);
 }
 
 
+.menuItem{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+   align-items: end;
+   justify-content: space-between;
+   padding: 8%;
+   color: white;
+
+}
+.menuItem li{
+    list-style: none;
+}
+.menuItem li a{
+    color: white;
+}
 
 @media (max-width:900px) {
     .navItem {
@@ -221,24 +251,45 @@
 
     .project {
         width: 90vw;
-        height: 30vh;
+        height: 40vh;
     }
 
     .prjImg {
         width: 50%;
-        height:30vh;
+        height: 40vh;
     }
-    .works h2{
+
+    .works h2 {
         padding-top: 5%;
         padding-bottom: 2%;
         color: white;
     }
-    .content{
+
+    .content {
         padding: 8px;
     }
-    .content h3{
+
+    .content h3 {
         padding-top: 20px;
         font-size: 20px;
+    }
+
+    /* menu */
+    .menu {
+        height: 100vh;
+        width: 80%;
+        background: linear-gradient(280.37deg, #0e0013 -0.71%, #320043 98.62%);
+        position: fixed;
+        right: 0;
+        z-index: 1;
+        transform: scaleX(0);
+        transform:translate(500px, 0);
+        transition: all 0.5s ease-out;
+    }
+    .menuOpen{
+        display: block;
+        transform: scaleX(1);
+        transform:translate(0 , 0);
     }
 
 }
