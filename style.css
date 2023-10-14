@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+html {
+    scroll-behavior: smooth;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +22,7 @@
     padding-left: 10%;
     padding-right: 10%;
     height: 10vh;
-    background: #360049;
+    background: linear-gradient(280.37deg, #0E0013 -0.71%, #320043 98.62%);
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
@@ -126,6 +128,7 @@
 .prjImg {
     width: 20vw;
     height: 20vw;
+    object-fit: cover;
 }
 
 .works h2 {
@@ -162,39 +165,90 @@
     /* font-weight: bold; */
     background-color: rgb(0, 0, 0);
     border: 1px solid;
-    
+
 }
 
 /* menu */
 .menu {
     width: 0;
     height: 0;
+    display: none;
 }
-.menuOpen{
+
+/* .menuOpen{
     display: block;
     transform: scaleX(1);
     transform:translate(0 , 0);
-}
+} */
 
 
-.menuItem{
+.menuItem {
     height: 60%;
     width: 100%;
     display: flex;
     flex-direction: column;
     font-size: 30px;
-   align-items: end;
-   justify-content: space-between;
-   padding: 8%;
-   color: white;
+    align-items: end;
+    justify-content: space-between;
+    padding: 8%;
+    color: white;
 
 }
-.menuItem li{
+
+.menuItem li {
     list-style: none;
 }
-.menuItem li a{
+
+.menuItem li a {
     color: white;
 }
+
+/* about */
+.about {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    display: flex;
+    width: 100%;
+    gap: 20%;
+}
+.aboutContent {
+    width: 60%;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    color: #8A8A8A;
+    font-size: 2.7vh;
+    /* background-color: red; */
+}
+.aboutContent p{
+    text-align: justify;
+}
+.imageAbout {
+    width: 50%;
+    /* background-color: red; */
+}
+
+/* contact */
+.contact{
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: linear-gradient(280.37deg, #0E0013 -0.71%, #320043 98.62%);
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+.contact p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding:8px;
+    display: flex;
+    align-items: center;
+}
+
 
 @media (max-width:900px) {
     .navItem {
@@ -274,6 +328,8 @@
         font-size: 20px;
     }
 
+    
+
     /* menu */
     .menu {
         height: 100vh;
@@ -283,13 +339,31 @@
         right: 0;
         z-index: 1;
         transform: scaleX(0);
-        transform:translate(500px, 0);
+        transform: translate(1000px, 0);
         transition: all 0.5s ease-out;
-    }
-    .menuOpen{
         display: block;
-        transform: scaleX(1);
-        transform:translate(0 , 0);
     }
 
+    .menuOpen {
+        display: block;
+        transform: scaleX(1);
+        transform: translate(0, 0);
+    }
+
+    /* about */
+    .about {
+        padding-left: 8%;
+        padding-right: 8%;
+        flex-direction: column;
+    }
+    .aboutContent{
+        width: 100%;
+    }
+    .aboutContent h2{
+        font-size: 3vh;
+    }
+    .imageAbout {
+        display: none;
+        /* background-color: red; */
+    }
 }

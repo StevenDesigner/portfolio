@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/446031fe85.js" crossorigin="anonymous"></script>
     <title>Stephenraj (UI/UX Designer)</title>
 </head>
 
@@ -14,14 +16,15 @@
     <div class="menu">
         <div class="menuItem">
             <button class="material-symbols-outlined"
-                style="font-size: 70px;color: white;font-weight: 100;background-color: transparent;    border: 0;" onclick="menuOpen()">
+                style="font-size: 70px;color: white;font-weight: 100;background-color: transparent;    border: 0;"
+                onclick="menuOpen()">
                 close
             </button>
-            
-                <li> <a href="#"> Work</a></li>
-                <li><a href="#">About</a> </li>
-                <li><a href="#">Contact</a></li>
-            
+
+            <li> <a href="#work"> Work</a></li>
+            <li><a href="#about">About</a> </li>
+            <li><a href="#contact">Contact</a></li>
+
         </div>
 
     </div>
@@ -30,9 +33,9 @@
             <img src="images/logo.png" alt="My Signature" class="logo">
             <div class="navItem">
                 <ul>
-                    <li> <a href="#"> Work</a></li>
-                    <li><a href="#">About</a> </li>
-                    <li><a href="#">Contact</a></li>
+                    <li> <a href="#work"> Work</a></li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="hamBurger" onclick="menuOpen()">
@@ -47,7 +50,7 @@
             <p>Hi There, I am </p>
             <h1>Stephenraj</h1>
             <h2><b>UX/UI & Web Designer </b> </h2>
-            <p>Hi There, I am at Scion Research and Development</p>
+            <p> at <a href="www.scionrd.com" style="color:#646464"> Scion Research and Development</a></p>
             <div class="buttons">
                 <a href="#">Resume</a>
                 <a href="#">Contact</a>
@@ -55,8 +58,9 @@
         </div>
 
     </div>
+<DIV id="work"></DIV>
 
-    <div class="works">
+    <div class="works" >
         <h2>Work</h2>
         <div class="row">
             <div class="project">
@@ -96,11 +100,79 @@
                     <button>View Case Study</button>
                 </div>
             </div>
-
-           
         </div>
     </div>
 
+    <!-- about page -->
+    <DIV id="about"></DIV>
+    <div class="about" >
+        <div class="aboutContent">
+
+            <h2 style=" font-family: 'Kaisei HarunoUmi';color: #360049;"> Hello! I am Stephenraj, </h2>
+            <p>
+                <br>
+                &ensp;&ensp; Welcome to my about section. I am a UX/UI designer with a Bachelor's degree in Computer
+                Science and Engineering, and I've been helping startups for the past <b> 1 years </b> to grow in
+                technology and achieve growth.
+                <br>
+                &ensp;&ensp; During my academic journey, I acquired a solid foundation in <b> web programming, graphic
+                    design, and UI/UX
+                    design </b>. My professional journey began as a freelancer, and after completing my degree, I joined
+                Scion
+                Research Development as a UX/UI designer. I'm proficient in various technologies, including <b> HTML,
+                    CSS,
+                    JavaScript, PHP, MySQL, and tools like Adobe Creative Cloud and Figma</b>.
+                <br>
+                &ensp; &ensp; My skill set encompasses design thinking, wireframing, prototyping, conducting user
+                interviews,
+                problem-solving, and visual design. I adhere to a simple design philosophy, which starts with
+                empathizing
+                with users, defining the problem, ideating solutions, creating prototypes, and rigorously testing those
+                solutions.
+                <br>
+                &ensp; &ensp;Outside of my computer, I enjoy sketching ideas in a notebook for future use.
+                <br>
+                &ensp;&ensp; If you need a UX/UI designer with a holistic approach to creating user-centric and visually
+                appealing
+                interfaces, I'm here to assist.
+            </p>
+        </div>
+
+        <div class="imageAbout">
+            <img src="images/about-01.jpg" alt="" width="100%" height="100%">
+        </div>
+    </div>
+
+    <DIV  id="contact"></DIV>
+
+    <div class="contact">
+        <h2 style=" font-family: 'Kaisei HarunoUmi';color: #ffffff;"> Let's Talk </h2>
+        <br>
+        <p>
+            <span class="material-symbols-outlined"
+                style="font-size: 30px;color: white;font-weight: 100;background-color: transparent;    border: 0;">
+                mail
+            </span> &ensp;&ensp; <a href="mailto:stephenrajwilson@gmail.com" target="_blank">
+                stephenrajwilson@gmail.com</a>
+        </p>
+        <p> <i class='fa fa-whatsapp' style='font-size:30px'></i> &ensp;&ensp;
+            <a href="https://wa.me/6385712059" target="_blank">+91 6385712059</a>
+        </p>
+        <p> <i class='fa fa-linkedin' style='font-size:30px'></i> &ensp;&ensp;
+            <a href="https://www.linkedin.com/in/stephenrajw/" target="_blank">Stephenraj W
+            </a>
+        </p>
+        <p><i class='fab fa-behance' style='font-size:30px'></i> &ensp;&ensp;
+            <a href="https://www.behance.net/steven_de_designer" target="_blank">steven_de_designer
+            </a>
+        </p>
+
+        <br><br>
+    </div>
+
+    <footer style="padding: 5px;color: #646464;">
+        <center>Design and Developed By Stephenraj</center>
+    </footer>
 </body>
 
 <script src="index.js"></script>
