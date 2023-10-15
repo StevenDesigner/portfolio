@@ -119,6 +119,12 @@ html {
     background-color: rgb(255, 255, 255);
     display: flex;
 }
+.project a{
+    color: white;
+}
+/* .project p{
+    line-height: 22px;
+} */
 
 .row {
     display: flex;
@@ -250,7 +256,7 @@ html {
 }
 
 
-@media (max-width:900px) {
+@media (max-width:1058px) {
     .navItem {
         display: none;
     }
